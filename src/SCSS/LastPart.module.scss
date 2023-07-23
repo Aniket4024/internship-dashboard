@@ -1,0 +1,145 @@
+@import "../SASS/Colors/Colors.module.scss";
+
+#LastPart{
+    height: 100%;
+    width: 20%;
+    // background-color: brown
+}
+#part1{
+    background-color: rgb(245, 245, 245);
+    width: 70%;
+    height: 50%;
+    // margin: auto;
+    border-radius: 10px;
+    text-align: start;
+    padding: 20px 20px;
+    margin-top: 70px;
+}
+#meters{
+    height: 40%;
+    width: 100%;
+    // background-color: aqua;
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+#meters>div{
+    height: 50%;
+    width: 100%;
+    // background-color: beige;
+}
+#meters>div>div{
+    height: 60%;
+    width: 100%;
+    // background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#meters>div>h5{
+    margin: 0px;
+}
+#meters>div>div>p{
+    font-size: 14px;
+    color: black;
+}
+
+#intrestPart{
+    height: 50%;
+    width: 100%;
+    // background-color: orange;
+}
+#intrestPart>div{
+    height: 25%;
+    width: 100%;
+    // background-color: teal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#intrestPart>div>p{
+    color: black;
+    font-size: 14px;
+}
+
+#intrestPart>div:nth-child(3){
+    height: 35%;
+    // background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#intrestPart>div:nth-child(3)>button{
+    background-color: $blue-color;
+    border: 0px;
+    border-radius: 10px;
+    height: 75%;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+#intrestPart>div:nth-child(4){
+    height: 15%;
+    // background-color: rgb(99, 115, 67);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#intrestPart>div:nth-child(4)>p{
+    font-size: 14px;
+    color: $blue-color;
+    cursor: pointer;
+}
+
+#part2{
+    height: 10%;
+    width: 70%;
+    margin-top: 30px;
+    border-left:2px solid #b6aeff;;
+    // background-color: red;
+    padding: 10px 20px;
+    text-align: start;
+}
+#part2>p:nth-child(1){
+    color: black;
+    margin-bottom: 2px;
+}
+#part2>h5{
+    margin: 0px;
+}
+#part2>p:nth-child(3){
+    margin-top: 5px;
+}
+#part2>p:nth-child(4){
+    margin-top: 10px;
+    color: $blue-color;
+    cursor: pointer;
+}
+
+#part3{
+    width: 100%;
+    height: 20%;
+    background-image:url(../Media/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+@media screen and (max-width:480px) {
+    #LastPart{
+        width: 100%;
+        // background-color: brown
+        padding-bottom: 0px;
+        margin-top: 270px;
+    }
+    
+    #part1{
+        margin:70px auto;
+    }
+    #part2{
+        margin: auto;
+    }
+}

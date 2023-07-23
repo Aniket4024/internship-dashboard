@@ -1,0 +1,139 @@
+@import "../SASS//Colors/Colors.module.scss";
+
+
+#Profile{
+    background-color: rgb(245, 245, 245);
+    width: 25%;
+    height: 100%;
+    // position: sticky;
+    transition: width 0.3s;
+    text-align: start;
+}
+h2,h3,h4{
+    margin: 0px;
+}
+p{
+    margin: 0px;
+    font-size: 12px;
+    font-weight: 600;
+    color: gray;
+}
+
+#part1{
+    height: 18%;
+    width: 100%;
+    // background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#part1>div{
+    height: 60%;
+    
+}
+#part1>div>h2{
+    margin-top: 20px;
+}
+#part1>div:nth-child(1){
+    width: 30%;
+    // background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+#part1>div:nth-child(2){
+    // background-color: pink;
+    width: 70%;
+    padding-left: 20px;
+    text-align: start;
+    line-height: 25px;
+}
+#part1>div>img{
+    width: 70%;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#part2{
+    height: 37%;
+    width: 85%;
+    // background-color: pink;
+    margin: auto;
+    text-align: start;
+    
+}
+#part2>div{
+    height: 20%;
+    width: 100%;
+    line-height: 25px;
+    margin-top: 5px;
+}
+#part2>div:nth-child(2){
+    // background-color: blue;
+}
+#part2>div:nth-child(3){
+    // background-color: rgb(67, 67, 255);
+}
+#part2>div:nth-child(4){
+    // background-color: rgb(124, 124, 255);
+}
+#part2>div:nth-child(5){
+    // background-color: rgb(211, 211, 255);
+    display: flex;
+    align-items: end;
+}
+
+#part2>div:nth-child(5)>button{
+    width: 40%;
+    height: 48px;
+    border-radius: 10px;
+    background-color: $blue-color;
+    border: 0px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+#part3{
+    width: 85%;
+    height: 44%;
+    margin: auto;
+    // background-color: violet;
+    padding-top: 5px;
+}
+#part3>div{
+    border-bottom: 1px solid rgb(221, 221, 221);
+    height: 15%;
+    line-height: 24px;
+    margin-top: 5px;
+}
+#part3>div:nth-child(2){
+    // background-color: yellow;
+    
+}
+
+#part3>h3{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:480px) {
+    #Profile{
+        background-color: white;
+        width: 100%;
+        // position: sticky;
+        transition: width 0.3s;
+        text-align: start;
+        margin-top: 50px;
+    }
+    #part2{
+        background-color: rgb(245, 245, 245);
+        border-radius: 15px;
+        padding: 20px;
+        width: 75%;
+    }
+}

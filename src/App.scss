@@ -1,0 +1,103 @@
+@import "../src/SASS/Colors/Colors.module.scss";
+
+.App {
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 790px;
+}
+
+.App>div:nth-child(1){
+  width: 100%;
+  height: 50px;
+  /* background-color: red; */
+  margin: auto;
+  display: none;
+  justify-content: end;
+  align-items: center;
+  position: fixed;
+  background-color:white;
+  top: 0;
+  z-index: 5;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.App>div:last-child{
+  width: 100%;
+  height: 50px;
+  /* background-color: red; */
+  margin: auto;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  color: gray;
+  position: fixed;
+  background-color: white;
+  bottom: 0;
+  box-shadow: rgba(133,175,255,255) 0px 8px 24px;
+}
+.App>div:last-child>div{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+#active{
+  background-color:$blue-color;
+  color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+@media screen and (max-width:480px) {
+  .App{
+    display: block;
+  }
+  .App>div:nth-child(1){
+    display: flex;
+  }
+  .App>div:last-child{
+    display: flex;
+  }
+}

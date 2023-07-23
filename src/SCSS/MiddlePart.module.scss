@@ -1,0 +1,197 @@
+@import "../SASS/Colors/Colors.module.scss";
+
+#main{
+    height: 100%;
+    width: 50%;
+    // background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#MiddlePart{
+    height: 85%;
+    width: 80%;
+    // background-color: rgb(246, 255, 228);
+    text-align: start;
+}
+
+#MiddlePart>div:nth-child(1){
+    height: 10%;
+    width: 100%;
+    // background-color: pink;
+    line-height: 25px;
+}
+#MiddlePart>div:nth-child(1)>h1{
+    margin: 0px;
+}
+#MiddlePart>div:nth-child(1)>p{
+    color: $blue-color;
+    margin-bottom: 5px;
+}
+
+#MiddlePart>div:nth-child(2){
+    height: 15%;
+    width: 100%;
+    // background-color: rgb(255, 133, 153);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#MiddlePart>div:nth-child(2)>div{
+    width: 30%;
+    height: 100%;
+    border-bottom: 2px solid #b6aeff;
+    
+}
+#MiddlePart>div:nth-child(2)>div>h2{
+    margin-top: 40px;
+}
+
+#MiddlePart>div:nth-child(3){
+    height: 40%;
+    width: 100%;
+    // background-color: skyblue;
+    padding-top: 10px;
+}
+#MiddlePart>div:nth-child(3)>h3{
+    margin: 30px 0px;
+}
+
+
+#MiddlePart>div:nth-child(4){
+    height: 32%;
+    width: 100%;
+    // background-color: rgb(0, 79, 110);
+    padding-top: 10px;
+    line-height: 25px;
+}
+#MiddlePart>div:nth-child(4)>div{
+    width: 100%;
+    height: 72%;
+    // background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#details{
+    height: 100%;
+    width: 25%;
+    // background-color: pink;
+}
+#details>div{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+#details>div:nth-child(1){
+    margin-top: 10px;
+}
+#details>div:nth-child(3){
+    border: 0px;
+}
+
+#ringChart{
+    height: 100%;
+    width: 70%;
+    // background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#ringChart>div{
+    height: 100%;
+    width: 30%;
+    
+}
+#ringChart>div>h5{
+    margin-top: 5px;
+    text-align: center;
+}
+
+// for RinfChart.jsx
+
+#ringProgress{
+    margin:25px 0px 0px 23px;
+}
+
+
+@media screen and (max-width:480px) {
+    #main{
+        width: 100%;
+    }
+    #MiddlePart>div:nth-child(2){
+        display: grid;
+        height: 200px;
+        grid-template-areas: 
+            "div1 div1 div1 div1"
+            "div2 div2 div3 div3"
+        ;
+    }
+    #MiddlePart>div:nth-child(2)>div:nth-child(1){
+        grid-area: div1;
+        width: 100%;
+    }
+    #MiddlePart>div:nth-child(2)>div:nth-child(2){
+        grid-area: div2;
+        width: 100%;
+    }
+    #MiddlePart>div:nth-child(2)>div:nth-child(3){
+        grid-area: div3;
+        width: 100%;
+    }
+    #MiddlePart>div:nth-child(3){
+        width: 100%;
+    }
+    #MiddlePart{
+        height: 100%;
+    }
+    #details{
+        width: 100%;
+    }
+    #MiddlePart>div:nth-child(4){
+        height: 32%;
+        width: 100%;
+        // background-color: rgb(0, 79, 110);
+        padding-top: 10px;
+        line-height: 25px;
+        margin-bottom: 300px;
+    }
+    
+    #MiddlePart>div:nth-child(4)>div{
+        display: block;
+        width: 100%;
+    }
+    #ringChart{
+        height: 100%;
+        width: 100%;
+        // background-color: aquamarine;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #ringChart>div{
+        height: 100%;
+        width: 30%;
+        // background-color: aqua;
+        
+    }
+    #ringChart>div>div{
+        height: 60%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #ringChart>div>h5{
+        margin-top: 5px;
+        text-align: center;
+    }
+}
