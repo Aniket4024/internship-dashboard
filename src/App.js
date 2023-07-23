@@ -42,7 +42,7 @@ function App() {
             setActive5(false)
           }}
         >
-          <IoHomeOutline style={{marginBottom:"5px"}}/>
+          <IoHomeOutline />
         </div>
         <div
           id={active2?"active":""}
@@ -54,7 +54,7 @@ function App() {
             setActive5(false)
           }}
         >
-          <FaRegNewspaper style={{marginBottom:"5px"}}/>
+          <FaRegNewspaper />
         </div>
         <div
           id={active3?"active":""}
@@ -66,7 +66,7 @@ function App() {
             setActive5(false)
           }}
         >
-          <TbArticle style={{marginBottom:"5px"}}/>
+          <TbArticle />
         </div>
         <div
           id={active4?"active":""}
@@ -78,7 +78,7 @@ function App() {
             setActive5(false)
           }}
         >
-            <FaRegUser fontSize={"15px"} style={{marginBottom:"5px"}}/>
+            <FaRegUser fontSize={"15px"} />
         </div>
         <div
           id={active5?"active":""}
@@ -90,7 +90,7 @@ function App() {
             setActive5(true)
           }}
         >
-          <BiSearch style={{marginBottom:"5px"}}/>
+          <BiSearch />
         </div>
       </div>
     </div>
